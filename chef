@@ -1,6 +1,5 @@
-##################
+
 # CHEF one-liners
-##################
 
 If more than one instance of `chef-client` is running, kill all and restart the service
 
