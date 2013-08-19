@@ -1,0 +1,7 @@
+##################
+# CHEF one-liners
+##################
+
+If more than one instance of `chef-client` is running, kill all and restart the service
+
+if ((`pgrep -l chef-client | wc -l` > 1)) ; then `killall chef-client && /etc/init.d/chef-client restart` > /dev/null ; fi;
